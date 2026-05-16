@@ -361,6 +361,14 @@
             justify-content: center;
             text-align: center;
             padding: 1.5rem;
+            overflow: hidden;
+        }
+
+        .about-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 3px;
         }
 
         .about-photo span {
@@ -620,7 +628,9 @@
             </div>
             <div class="about-grid">
                 <div class="about-photo">
-                    <span>Erikka's photo goes here</span>
+                    <img src="erikka.jpg" alt="Erikka Miles"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                    <span style="display:none">Add erikka.jpg to show photo</span>
                 </div>
                 <div class="about-body">
                     <p class="lead">Erikka Miles is an artist and educator working across painting, drawing, and sculpture in Los Angeles.</p>
